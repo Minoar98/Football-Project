@@ -80,6 +80,25 @@
        width: 50%;
    }
 
+   .home-img:hover {
+       animation: motion 3s infinite linear;
+   }
+
+   @keyframes motion {
+       0% {
+           transform: translateX(0px);
+       }
+
+       50% {
+           transform: translateX(30px);
+       }
+
+       100% {
+           transform: translateX(0px);
+       }
+   }
+
+
    .link-button {
        padding: 10px 25px;
        text-decoration: none;
@@ -128,6 +147,10 @@
    /* highlight css */
    .highlight {
        padding: 30px 0 60px 0;
+       background-image: url(../images/FDP-The_Vision_Website_cover.png);
+       height: 100vh;
+       background-repeat: no-repeat;
+
    }
 
    .highlight-wrap {
@@ -135,12 +158,12 @@
    }
 
    .highlight-content {
-       padding-top: 50px;
+       padding-top: 120px;
        width: 50%;
    }
 
    .highlight-content h2 {
-       color: #0A0826;
+       color: #ffff;
        font-size: 48px;
        font-weight: 700;
        line-height: 60px;
@@ -149,17 +172,16 @@
 
    .highlight-content p {
        font-size: 16px;
-       color: #6C6C6C;
+       color: #fff;
        font-weight: 300;
+   }
+
+   .highlight-content .link-button {
+       background-color: rgb(18, 119, 217);
    }
 
    .highlight-content .link-button i {
        padding-left: 7px;
-   }
-
-
-   .highlight-img {
-       width: 50%;
    }
 
    /* footer css */
